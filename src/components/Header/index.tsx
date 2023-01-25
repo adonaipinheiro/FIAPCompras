@@ -1,5 +1,11 @@
 import React from 'react';
-import {StatusBar, Text, TextInput, View, TouchableOpacity} from 'react-native';
+import {
+  StatusBar,
+  Text,
+  TextInput,
+  View,
+  TouchableOpacity,
+} from 'react-native';
 
 // Styles
 import {styles} from './styles';
@@ -10,7 +16,11 @@ interface HeaderProps {
   onChange(text: string): void;
 }
 
-export default function Header({addItem, onChange, value}: HeaderProps) {
+export default function Header({
+  addItem,
+  onChange,
+  value,
+}: HeaderProps) {
   return (
     <>
       <StatusBar backgroundColor={'#00000030'} />

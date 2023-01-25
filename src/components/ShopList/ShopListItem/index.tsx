@@ -15,7 +15,10 @@ interface ShopListItemProps extends Omit<ShopListProps, 'data'> {
   };
 }
 
-export default function ShopListItem({data, removeItem}: ShopListItemProps) {
+export default function ShopListItem({
+  data,
+  removeItem,
+}: ShopListItemProps) {
   return (
     <TouchableOpacity
       onLongPress={() => removeItem(data.index)}

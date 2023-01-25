@@ -20,7 +20,9 @@ export default function ShopList({data, removeItem}: ShopListProps) {
     <FlatList
       data={data}
       style={styles.container}
-      renderItem={item => <ShopListItem data={item} removeItem={removeItem} />}
+      renderItem={item => (
+        <ShopListItem data={item} removeItem={removeItem} />
+      )}
       keyExtractor={(_, index) => index.toString()}
     />
   );
