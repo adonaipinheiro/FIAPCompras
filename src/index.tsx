@@ -1,8 +1,8 @@
 import React from 'react';
 
 // Screens
-import ShopList from './screens/ShopList';
+import Home from './screens/Home';
 
 export default function App() {
-  return <ShopList />;
+  return <Home />;
 }
