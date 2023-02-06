@@ -16,6 +16,7 @@ export default function useHome() {
     } else if (productsList.includes(product)) {
       Alert.alert('Atenção', 'Produto já cadastrado');
     } else {
+      setProduct('');
       setProductsList(oldProductsList => [
         ...oldProductsList,
         product,
